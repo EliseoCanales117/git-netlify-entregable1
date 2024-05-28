@@ -1,0 +1,75 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*------------Reset-------------*/
+*,
+* ::before
+* ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+
+
+}
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: black;
+  color: white ;
+}
+button {
+  cursor : pointer;
+  border: none;
+  display: inline-block;
+  font-family: inherit;
+}
+/*------------App-------------*/
+.app {
+  background-image: url(../public/fortuna-2/fondo1.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 100vh;
+
+}
+
+.app__title{
+  width: 250px;
+  text-align: center;
+  text-shadow: 2px 2px aquamarine,
+                 2px -2px aquamarine,
+                 -2px 2px aquamarine,
+               -2px -2px aquamarine;
+}
+
+.text {
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.text p {
+  text-align: center;
+  background-color: rgba(255, 166, 0, 0.678);
+  padding: 7px 14px;
+  border-radius: 7px;
+}
+.btn {
+  background-color: aquamarine;
+  padding: 7px 14px;
+  border-radius: 7px;
+  transition: transform .5s;
+  
+}
+.btn:hover {
+  transform: scale(1.1);
+  transition: transform .5s;
+
+
+
+}
